@@ -1,0 +1,19 @@
+allowBuilds:
+  bufferutil: set this to true or false
+  keccak: set this to true or false
+  secp256k1: set this to true or false
+  utf-8-validate: set this to true or false
+# pnpm 11 configuration (settings moved from package.json "pnpm" field).
+# 
+# node-linker: hoisted — flattens node_modules so every package resolves a
+# single physical copy of @wagmi/core and viem. The default isolated linker
+# places identical versions into different peer-context folders; TypeScript
+# treats those as distinct modules because Chain and Emitter carry private
+# symbols, which breaks CreateConnectorFn compatibility between wagmi 2.x
+# (@rainbow-me/rainbowkit) and @arcana/auth-wagmi v3.
+#
+# overrides force a single @wagmi/core and viem version across the tree.
+nodeLinker: hoisted
+overrides:
+  "@wagmi/core": ^2.22.1
+  "viem": ^2.56.5

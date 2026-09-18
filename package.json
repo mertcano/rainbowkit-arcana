@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@arcana/auth": "^1.0.10",
-    "@arcana/auth-wagmi": "^2.0.0",
+    "@arcana/auth": "^1.0.11",
+    "@arcana/auth-wagmi": "^3.0.0",
     "@rainbow-me/rainbowkit": "^2.0.2",
     "@rainbow-me/rainbowkit-siwe-next-auth": "^0.4.0",
     "@tanstack/react-query": "^5.28.4",
@@ -22,7 +22,7 @@
     "react-dom": "^18",
     "siwe": "^2",
     "viem": "2.x",
-    "wagmi": "^2.5.11"
+    "wagmi": "^2.19.5"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -10,7 +10,10 @@ const connectors = connectorsForWallets(
     },
     {
       groupName: "Recommended",
-      wallets: [metaMaskWallet, ArcanaRainbowConnector({chains})],
+      wallets: [
+        metaMaskWallet,
+        ArcanaRainbowConnector,
+      ],
     },
   ],
   {
